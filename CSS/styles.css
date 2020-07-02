@@ -1,0 +1,117 @@
+/* Цвет основного текста #757575*/
+/* Цвет акцента курсора #2196F3*/
+/* Цвет фона #FFFFFF*/
+/* Цвет заголовков #212121*/
+/* Цвет белых надписей #FFFFFF*/
+/*Цвет контактов rgba(255, 255, 255, 0.6);*/
+/* Цвет логотипа #000000*/
+/* Цвет фона вторичный #F5F4FA*/
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --text-button: #ffffff;
+  --back-button-color: #f5f4fa;
+}
+body {
+  background-color: #ffffff;
+  color: #757575;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*Оформление меню навигации*/
+.logo-nav {
+  color: #000000;
+}
+.logo-part {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
+/*Оформление адреса*/
+.ad-link {
+  text-decoration: none;
+}
+.ad-link {
+  color: #757575;
+}
+.ad-link:hover,
+.ad-link:focus {
+  color: var(--accent-text-color);
+}
+
+/*Оформление секции Hero*/
+.hero {
+  color: #000000;
+}
+
+.button {
+  color: var(--text-button);
+  background-color: var(--accent-text-color);
+}
+.button.primary {
+  color: var(--text-button);
+  background-color: var(--accent-text-color);
+}
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--back-button-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--accent-text-color);
+  color: var(--text-button);
+}
+
+/*Оформление секции Наше преимущество*/
+.hide-title {
+  display: none;
+}
+.section-title {
+  color: var(--title-text-color);
+}
+
+/*Оформление секции Чем мы занимаемся*/
+.work-title {
+  color: var(--title-text-color);
+}
+.work-item {
+  color: var(--title-text-color);
+}
+
+/*Оформление секции Наша команда*/
+.team-member {
+  color: var(--title-text-color);
+}
+.social-list {
+}
+.social-list .link:hover,
+.social-list .link:focus {
+  color: var(--accent-text-color);
+}
+
+/*Стилизация Fotter*/
+.footer-adress {
+  text-decoration: none;
+}
+
+/*Стилизация portfolio.html*/
+.portfolio-list h3 {
+  color: var(--title-text-color);
+}
