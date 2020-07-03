@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body>
@@ -16,13 +21,17 @@
         </a>
         <ul class="site-nav">
           <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
+          <li>
+            <a href="./portfolio.html" target="_self" class="link current">
+              Портфолио
+            </a>
+          </li>
           <li><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <address>
-        <a href="" class="ad-link">info@devstudio.com</a>
-        <a href="" class="ad-link">tel:+380961111111</a>
+      <address class="head-address">
+        <a href="" class="head-link">info@devstudio.com</a>
+        <a href="" class="head-link">tel:+380961111111</a>
       </address>
     </header>
     <main>
@@ -30,11 +39,19 @@
       <section>
         <h1 class="hide-title">Меню выбора элементов</h1>
         <ul class="button-list">
-          <li><button class="button primary">Все</button></li>
-          <li><button class="button secondary">Веб-сайты</button></li>
-          <li><button class="button secondary">Приложения</button></li>
-          <li><button class="button secondary">Дизайн</button></li>
-          <li><button class="button secondary">Маркетинг</button></li>
+          <li><button type="button" class="button primary">Все</button></li>
+          <li>
+            <button type="button" class="button secondary">Веб-сайты</button>
+          </li>
+          <li>
+            <button type="button" class="button secondary">Приложения</button>
+          </li>
+          <li>
+            <button type="button" class="button secondary">Дизайн</button>
+          </li>
+          <li>
+            <button type="button" class="button secondary">Маркетинг</button>
+          </li>
         </ul>
       </section>
       <!--Портфолио-->
@@ -48,8 +65,8 @@
               height="294"
               alt="Технокряк"
             />
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
+            <h3 class="title-post">Технокряк</h3>
+            <p class="team-work">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -58,8 +75,8 @@
               height="294"
               alt="Постер New Orlean vs Golden Star"
             />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
+            <h3 class="title-post">Постер New Orlean vs Golden Star</h3>
+            <p class="team-work">Дизайн</p>
           </li>
           <li>
             <img
@@ -68,8 +85,8 @@
               height="294"
               alt="Ресторан Seafood"
             />
-            <h3>Ресторан Seafood</h3>
-            <p>Приложение</p>
+            <h3 class="title-post">Ресторан Seafood</h3>
+            <p class="team-work">Приложение</p>
           </li>
           <li>
             <img
@@ -78,8 +95,8 @@
               height="294"
               alt="Проект Prime"
             />
-            <h3>Проект Prime</h3>
-            <p>Маркетинг</p>
+            <h3 class="title-post">Проект Prime</h3>
+            <p class="team-work">Маркетинг</p>
           </li>
           <li>
             <img
@@ -88,8 +105,8 @@
               height="294"
               alt="Проект Boxes"
             />
-            <h3>Проект Boxes</h3>
-            <p>Приложение</p>
+            <h3 class="title-post">Проект Boxes</h3>
+            <p class="team-work">Приложение</p>
           </li>
           <li>
             <img
@@ -98,8 +115,8 @@
               height="294"
               alt="Inspiration has no Borders"
             />
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+            <h3 class="title-post">Inspiration has no Borders</h3>
+            <p class="team-work">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -108,8 +125,8 @@
               height="294"
               alt="Издание Limited Edition"
             />
-            <h3>Издание Limited Edition</h3>
-            <p>Дизайн</p>
+            <h3 class="title-post">Издание Limited Edition</h3>
+            <p class="team-work">Дизайн</p>
           </li>
           <li>
             <img
@@ -118,8 +135,8 @@
               height="294"
               alt="Проект LAB"
             />
-            <h3>Проект LAB</h3>
-            <p>Маркетинг</p>
+            <h3 class="title-post">Проект LAB</h3>
+            <p class="team-work">Маркетинг</p>
           </li>
           <li>
             <img
@@ -128,8 +145,8 @@
               height="294"
               alt="Growing Business"
             />
-            <h3>Growing Business</h3>
-            <p>Приложение</p>
+            <h3 class="title-post">Growing Business</h3>
+            <p class="team-work">Приложение</p>
           </li>
         </ul>
       </section>
@@ -140,12 +157,12 @@
         <span class="logo-part">Web</span>
         Studio
       </a>
-      <address class="footer-adress">
-        <a href="">г. Киев, пр-т Леси Украинки, 26</a>
+      <address>
+        <a href="" class="footer-adress">г. Киев, пр-т Леси Украинки, 26</a>
         <br />
-        <a href="">info@example.com</a>
+        <a href="" class="footer-contacts">info@example.com</a>
         <br />
-        <a href="">+38 099 111 11 11</a>
+        <a href="" class="footer-contacts">+38 099 111 11 11</a>
       </address>
       <b>ПРИСОЕДЕНЯЙТЕСЬ</b>
       <ul class="social-list">

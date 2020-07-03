@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб студия</title>
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body>
@@ -17,23 +22,23 @@
         <ul class="site-nav">
           <li><a href="./index.html" class="link current">Студия</a></li>
           <li>
-            <a href="./portfolio.html" target="_blank" class="link">
+            <a href="./portfolio.html" target="_self" class="link">
               Портфолио
             </a>
           </li>
           <li><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <address>
-        <a href="" class="ad-link">info@devstudio.com</a>
-        <a href="" class="ad-link">tel:+380961111111</a>
+      <address class="head-address">
+        <a href="" class="head-link">info@devstudio.com</a>
+        <a href="" class="head-link">tel:+380961111111</a>
       </address>
     </header>
     <main>
       <!--Эффективные решения для вашего бизнеса-->
       <section class="hero">
-        <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button class="button primary">Заказать услугу</button>
+        <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <button type="button" class="button primary">Заказать услугу</button>
       </section>
       <!--Наше преимущество-->
       <section>
@@ -41,28 +46,28 @@
         <ul>
           <li>
             <h3 class="section-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-            <p>
+            <p class="section-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
             <h3 class="section-title">ПУНКТУАЛЬНОСТЬ</h3>
-            <p>
+            <p class="section-text">
               Задача организации, в особенности же рамки и место обучения
               кадроввлечет за собой.
             </p>
           </li>
           <li>
             <h3 class="section-title">ПЛАНИРОВАНИЕ</h3>
-            <p>
+            <p class="section-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
             <h3 class="section-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-            <p>
+            <p class="section-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -115,7 +120,7 @@
               height="260"
             />
             <h3 class="team-member">Николай Кучеренко</h3>
-            <p>Product Designer</p>
+            <p class="team-work">Product Designer</p>
             <ul class="social-list">
               <li>
                 <a href="" aria-label="Instagram" class="link">Instagram</a>
@@ -137,7 +142,7 @@
               height="260"
             />
             <h3 class="team-member">Ольга Иванова</h3>
-            <p>Frontend Developer</p>
+            <p class="team-work">Frontend Developer</p>
             <ul class="social-list">
               <li>
                 <a href="" aria-label="Instagram" class="link">Instagram</a>
@@ -159,7 +164,7 @@
               height="260"
             />
             <h3 class="team-member">Андрей Шевченко</h3>
-            <p>Marketing</p>
+            <p class="team-work">Marketing</p>
             <ul class="social-list">
               <li>
                 <a href="" aria-label="Instagram" class="link">Instagram</a>
@@ -181,7 +186,7 @@
               height="260"
             />
             <h3 class="team-member">Иван Николаев</h3>
-            <p>UI Designer</p>
+            <p class="team-work">UI Designer</p>
             <ul class="social-list">
               <li>
                 <a href="" aria-label="Instagram" class="link">Instagram</a>
@@ -216,12 +221,12 @@
         <span class="logo-part">Web</span>
         Studio
       </a>
-      <address class="footer-adress">
-        <a href="">г. Киев, пр-т Леси Украинки, 26</a>
+      <address>
+        <a href="" class="footer-adress">г. Киев, пр-т Леси Украинки, 26</a>
         <br />
-        <a href="">info@example.com</a>
+        <a href="" class="footer-contacts">info@example.com</a>
         <br />
-        <a href="">+38 099 111 11 11</a>
+        <a href="" class="footer-contacts">+38 099 111 11 11</a>
       </address>
       <b>ПРИСОЕДЕНЯЙТЕСЬ</b>
       <ul class="social-list">
